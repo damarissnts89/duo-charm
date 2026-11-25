@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Damaris & Júlia | Consultoras Mary Kay</title>
+<meta name="description" content="Conheca os produtos Mary Kay e fale diretamente com Damaris ou Julia pelo WhatsApp.">
+<meta name="theme-color" content="#fdeef4">
+<meta property="og:title" content="Damaris & Julia | Consultoras Mary Kay">
+<meta property="og:description" content="Beleza e autocuidado com atendimento direto pelo WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdeef4; --card:#ffffff; --ink:#3a1230; --muted:#7a5a70;
+  --pink:#d6246e; --pink-ink:#ffffff; --line:#f3c9dc; --wa:#1f9d55;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#2a0f22; --card:#3a1a31; --ink:#fbe7f1; --muted:#d3aac0;
+    --pink:#ff5fa2; --pink-ink:#2a0f22; --line:#5a2b4a; --wa:#43c97a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#2a0f22; --card:#3a1a31; --ink:#fbe7f1; --muted:#d3aac0;
+  --pink:#ff5fa2; --pink-ink:#2a0f22; --line:#5a2b4a; --wa:#43c97a;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'DM Sans',system-ui,sans-serif; line-height:1.5;
+  min-height:100vh; display:flex; justify-content:center;
+}
+main{width:100%; max-width:440px; padding:40px 20px 32px; text-align:center}
+.avatar{
+  width:96px; height:96px; border-radius:50%; margin:0 auto 18px;
+  background:var(--pink); color:var(--pink-ink);
+  display:grid; place-items:center;
+  font-family:'Fraunces',Georgia,serif; font-size:34px;
+}
+h1{font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:28px; line-height:1.15; margin:0 0 8px}
+.sub{color:var(--muted); margin:0 auto 28px; max-width:32ch}
+.links{display:flex; flex-direction:column; gap:12px}
+a.btn{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:16px 18px; border-radius:14px; text-decoration:none;
+  font-weight:600; font-size:16px; color:var(--ink);
+  background:var(--card); border:1.5px solid var(--line);
+  transition:transform .15s ease;
+}
+a.btn:active{transform:scale(.98)}
+a.btn:focus-visible{outline:3px solid var(--pink); outline-offset:3px}
+a.main{background:var(--wa); border-color:var(--wa); color:#fff; font-size:17px; padding:18px}
+a.cat{background:var(--pink); border-color:var(--pink); color:var(--pink-ink)}
+noscript p{color:var(--muted); font-size:14px}
+.foot{margin-top:32px; font-size:13px; color:var(--muted)}
+</style>
+</head>
+<body>
+<main aria-label="Pagina de atendimento">
+  <div class="avatar" aria-hidden="true">D&amp;J</div>
+  <h1>Damaris &amp; Júlia</h1>
+  <p class="sub">Consultoras Mary Kay. Beleza e autocuidado com atendimento de verdade.</p>
+
+  <div class="links">
+    <a class="btn main" id="wa1" href="https://wa.me/5518996456528?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20e%20quero%20conhecer%20os%20produtos%20Mary%20Kay%20%F0%9F%92%84" target="_blank" rel="noopener noreferrer" aria-label="Conversar com Damaris pelo WhatsApp">💬 WhatsApp da Damaris</a>
+    <a class="btn main" id="wa2" href="https://wa.me/5518996271352?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20e%20quero%20conhecer%20os%20produtos%20Mary%20Kay%20%F0%9F%92%84" target="_blank" rel="noopener noreferrer" aria-label="Conversar com Julia pelo WhatsApp">💬 WhatsApp da Júlia</a>
+    <a class="btn cat" id="cat" href="https://drive.google.com/file/d/1zMhFInWgNBxUk0D4qjGybI7dMYUoS4c1/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Abrir catalogo Nov/Dez">📖 Ver catálogo Nov/Dez</a>
+    <a class="btn" id="ig" href="https://instagram.com/_duocharm" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram das consultoras">📸 Nosso Instagram</a>
+  </div>
+
+  <noscript><p>Os botoes continuam funcionando normalmente sem JavaScript.</p></noscript>
+  <p class="foot">Consultoras Mary Kay independentes</p>
+</main>
+
+<script>
+// ✏️ EDITE AQUI: seus dados
+var CONFIG = {
+  whatsapp1: "5518996456528", // Damaris
+  whatsapp2: "5518996271352", // Júlia
+  mensagem: "Olá! Vim pelo Instagram e quero conhecer os produtos Mary Kay 💄",
+  catalogo: "https://drive.google.com/file/d/1zMhFInWgNBxUk0D4qjGybI7dMYUoS4c1/view?usp=drivesdk",
+  instagram: "https://instagram.com/_duocharm"
+};
+document.getElementById("wa1").href =
+  "https://wa.me/" + CONFIG.whatsapp1 + "?text=" + encodeURIComponent(CONFIG.mensagem);
+document.getElementById("wa2").href =
+  "https://wa.me/" + CONFIG.whatsapp2 + "?text=" + encodeURIComponent(CONFIG.mensagem);
+document.getElementById("cat").href = CONFIG.catalogo;
+document.getElementById("ig").href = CONFIG.instagram;
+</script>
+</body>
+</html>
